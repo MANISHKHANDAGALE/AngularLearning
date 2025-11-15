@@ -14,6 +14,7 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { ControlFlowComponent } from './control-flow/control-flow.component';
 import { SignalDynamicStyleComponent } from './signal-dynamic-style/signal-dynamic-style.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 export const routes: Routes = [
     {path:"",component:HomeComponent},
@@ -30,5 +31,6 @@ export const routes: Routes = [
     {path:"child",component:ChildComponent},
     {path:"ControlFlow",component:ControlFlowComponent},
     {path:"DynamicStylingSignals",component:SignalDynamicStyleComponent},
+    {path:"pipes",component:PipesComponent},
     {path:"**",component:PageNotFoundComponent}
 ];
