@@ -1,3 +1,21 @@
 <h1>Pipes</h1>
-<h2>Custom Pipes</h2>
-<h3>pipesss</h3>
+<hr>
+<h2>{{title}}</h2>
+<h2>{{title | uppercase}}</h2>
+<h2>{{title | lowercase}}</h2>
+<h2>{{title | titlecase}}</h2>
+<hr>
+<h2>{{date}}</h2>
+<h2>{{date|date:'fullDate'}}</h2>
+<h2>{{date|date:'fullDate'|uppercase}}</h2>
+<h2>{{date|date:'hh:mm:ss'}}</h2>
+<hr>
+<h2>{{amount}}</h2>
+<h2>{{amount|currency}}</h2>
+<h2>{{amount|currency:'INR'}}</h2>
+<h2>{{amount|currency:'EUR'}}</h2>
+<hr>
+<h2>Custom Pipes -> currencyConverter</h2>
+<h3>{{amount|currencyConverter:1000}}</h3>
+<h3>{{amount|currencyConverter}}</h3>
+
