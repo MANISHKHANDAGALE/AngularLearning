@@ -1,0 +1,30 @@
+<h1>Directives</h1>
+<h1>*ngfor</h1>
+<ul>
+    <li *ngFor="let i of users">
+     {{i}}
+    </li>
+</ul>
+<ul>
+    <li *ngFor="let i of students">
+     {{i.nav}},{{i.age}},{{i.email}}
+    </li>
+</ul>
+<hr>
+<h1>*Ngif</h1>
+<div *ngIf="login ; else Elseblock">
+    <a href="">Logout</a>
+</div>
+<ng-template #Elseblock>
+    <a href="">LogIn</a>
+</ng-template>
+<hr>
+<h1>*ng SwitchCase</h1>
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'" style="width: 100px; height: 100px; background-color: red; margin: 10px;"></div>
+    <div *ngSwitchCase="'blue'" style="width: 100px; height: 100px; background-color: blue; margin: 10px;"></div>
+    <div *ngSwitchCase="'green'" style="width: 100px; height: 100px; background-color: green; margin: 10px;"></div>
+    <div *ngSwitchDefault style="width: 100px; height: 100px; background-color: black; margin: 10px;"></div>
+</div>
+
+

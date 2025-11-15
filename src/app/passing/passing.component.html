@@ -1,0 +1,16 @@
+<h1>passing data with routing</h1>
+ <!-- data passed using routerLink -->
+<!-- <a [routerLink]="['/passings',{name:'manizzz'}]" >passing data</a> -->
+ <!-- data passed using btn click -->
+<!-- <button (click)="data('manish')">passing</button> -->
+
+
+<input #nm type="text" placeholder="Enter Name">
+
+<button (click)="data(nm.value)">Send Data</button>
+
+<br><br>
+
+<!-- <a [routerLink]="['/passings']" [queryParams]="{name: nm.value}">
+  Send Using RouterLink
+</a> -->

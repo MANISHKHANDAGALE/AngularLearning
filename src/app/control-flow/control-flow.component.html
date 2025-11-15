@@ -1,0 +1,52 @@
+<h1>Control Flow</h1>
+<h2>UserName : {{displayName}}</h2>
+<input type="text" (input)="getName($event)" value={{name}} placeholder="Enter Name :">
+<button (click)="display_name()">GetName</button>
+<button (click)="setName()">SetName</button>
+<hr>
+<!-- if else -->
+<h1>If else , Else If </h1>
+@if (show) {
+    <div style="width: 100px; height: 100px; background-color: red; margin: 10px;"></div>
+}
+<!-- @else  {
+    <div style="width: 100px; height: 100px; background-color: blue ; margin: 10px;"></div>
+} -->
+<button (click)="showDiv()">show</button>
+<button (click)="hide()">hide</button>
+<button (click)="toggle()">toggle</button>
+<hr>
+<!-- switch case -->
+<h1>Switch case</h1>
+<button (click)="handleColor('red')">red</button>
+<button (click)="handleColor('blue')">blue</button>
+<button (click)="handleColor('green')">green</button>
+<input (input)="handleInputColor($event)" type="text" placeholder="Enter Color :" name="" id="">
+ @switch (color) {
+    @case ("red") {
+        <div style="width: 100px; height: 100px; background-color: red; margin: 10px;"></div>
+    }
+    @case ("blue") {
+        <div style="width: 100px; height: 100px; background-color: blue; margin: 10px;"></div>
+    }
+    @case ("green") {
+        <div style="width: 100px; height: 100px; background-color: green; margin: 10px;"></div>
+    }
+    @default {
+        <div style="width: 100px; height: 100px; background-color: black; margin: 10px;"></div>
+    }
+ }
+ <hr>
+ <!-- for loop -->
+ <h1>For loop</h1>
+ <h2>get my name : {{myName}}</h2>
+ @for(item of students; track item;let id=$index){
+    <h2>
+        <span style="padding: 10px;">{{id+1}}</span> 
+        <span>{{item.nav}}</span>
+        <span>{{item.age}}</span>
+        <span>{{item.email}}</span>
+        <button (click)="handlegetName(item.nav)">Get Name</button>
+    </h2>
+ }
+ <hr>

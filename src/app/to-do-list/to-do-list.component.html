@@ -1,0 +1,14 @@
+<h1>to-do-list works!</h1>
+<input style="padding: 5px;margin: 5px;border-radius: 10px;border: 1px solid blue;cursor: pointer;" [(ngModel)]="task" placeholder="Enter Task" type="text" name="" id="">
+<button (click)="addTask()" style="padding: 5px;margin: 5px;border-radius: 20px;border: 1px solid blue; background-color: red; cursor: pointer;">Add Task</button>
+@for (item of taskList; track item.id;) {
+   
+  
+   
+   <ul style="display: flex;justify-content:space-between;align-items: center;list-style: none;">
+    <li> <h2>{{item.id}}</h2></li>
+    <li> <h2>{{item.task}}</h2></li>
+    <li> <button (click)="removeTask(item.id)" style="padding: 5px;margin: 5px;border-radius: 20px;border: 1px solid blue; background-color: red; cursor: pointer;">Delete</button></li>
+   </ul>
+}
+<hr>

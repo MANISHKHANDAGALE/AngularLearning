@@ -1,0 +1,23 @@
+<h1>Parent</h1>
+<child [user]="user" age="22"></child>
+<select [(ngModel)]="user" >
+    <option value="anil">anil</option>
+    <option value="ani">ani</option>
+    <option value="an">an</option>
+</select>
+<br>
+@for (item of users; track item) {
+    <child [users]="item" user="{{item.name}}" age="{{item.id}}" ></child>
+    <br>
+}
+<!-- <select #usern (change)="onChange(usern.value)">
+    <option value="anil">anil</option>
+    <option value="ani">ani</option>
+    <option value="an">an</option>
+</select> -->
+<br>
+<h1>Getting Data From Child</h1>
+<child (getUser)="handleUser($event)"></child>
+@for (item of username; track item) {
+    <h3>{{item}}</h3>
+}

@@ -1,0 +1,23 @@
+<h1>Template Form</h1>
+<form #profile="ngForm" (ngSubmit)="addDetails(profile.value)" >
+    <input #name="ngModel" type="text" placeholder="Enter Name" name="name" id="" ngModel required><br>
+    <span class="error" *ngIf="name.invalid && name.touched">This Field is Required</span><br>
+    <input #password="ngModel" type="password" placeholder="Enter Password" required name="password" ngModel id=""><br>
+     <span class="error" *ngIf="password.invalid && password.touched">This Field is Required</span><br>
+    <select #gender="ngModel" required ngModel name="gender">
+        <option  value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option  value="Female">Female</option>
+    </select><br>
+     <span class="error" *ngIf="gender.invalid && gender.touched">This Field is Required</span><br>
+     <input #address="ngModel" placeholder="Enter address"  type="text" pattern="[a-zA-Z0-9\s]+" name="address" ngModel required>
+     <span class="error" *ngIf="address.invalid && address.touched"> please enter valid address</span><br>
+    <input required #range="ngModel" ngModel type="range" name="range" min="0" max="20"><br>
+     <span class="error" *ngIf="range.invalid && range.touched">This Field is Required</span><br>
+    <button [disabled]="profile.invalid">Add User</button>
+</form>
+<!-- <form #profile="ngForm" (ngSubmit)="addDetails(profile.value)">
+    <input type="text" placeholder="Enter Name" name="Name" id="" ngModel><br>
+    <input type="password" placeholder="Enter password" name="Password" ngModel><br>
+    <button>Submit</button>
+</form> -->

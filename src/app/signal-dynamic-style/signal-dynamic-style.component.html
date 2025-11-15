@@ -1,0 +1,70 @@
+
+ <!-- signals -->
+ <h1>Signals</h1>
+ <h2>{{x}}</h2>
+ <h2>{{count()}}</h2>
+ <button (click)="increase()">increment</button>
+ <button (click)="count.set(count()-1);">decrement</button>
+ <hr>
+ <h1>Writeable Signals</h1>
+ <h2>signal</h2>
+ <h3>{{data()}}</h3>
+ <button style="padding: 5px ;margin: 5px;" (click)="data.set('hello')">change signal to string</button>
+ <button style="padding: 5px; margin: 5px;" (click)="data.set(7)">change signal to number</button>
+<h1>computed signals</h1>
+<h2>Value of signal </h2>
+<h3>{{a()}}</h3>
+<h3>{{b()}}</h3>
+<h3>{{c()}}</h3>
+<button (click)="a.set(a()+10);b.set(b()+10)">change values of a,b signal</button>
+<hr>
+<!-- Effect -->
+<h1>Effect</h1>
+<h2>{{a()}}</h2>
+<button (click)="a.set(a()+10)">Update Val</button>
+@if(displaysignal){
+    <div style="width: 100px; height: 100px; background-color: black; margin: 10px;"></div>
+}
+<hr>
+<h1>for loop contextual variables</h1>
+<h2>$index</h2>
+@for(student of users;track student;let i = $index;){
+    
+    <h2>{{i}} {{student}}</h2>
+}
+<hr>
+<h2>$first & $last</h2>
+@for (item of users; track item;let i = $index;let f = $first;let l =$last) {
+ @if(f || l){
+    <h2 style="background-color: blue; display: inline;">{{i}} {{item}}</h2>
+ }
+ @else {
+    <h2 style="background-color: red;">{{i}} {{item}}</h2>
+ }
+}
+<hr>
+<h2>$odd & $even</h2>
+
+@for(item of users;track item;let i = $index;){
+    @if($odd){
+        <h2 style="background-color: yellow;">{{i}} {{item}}</h2>
+    }
+    @else {
+        <h2 style="background-color: green;">{{i}} {{item}}</h2>
+    }
+}
+@empty {
+    <h1>No record found</h1>
+}
+
+<hr>
+<h1>Two Way Binding</h1>
+<input [(ngModel)]="dbz" type="text" name="" id="" placeholder="Enter Dbz Character">
+<h2>{{dbz}}</h2>
+<hr>
+<h1>Dynamic Styling</h1>
+<h2 [style.backgroundColor]="bgColor" 
+    [style.fontSize]="zoom?headingSizeBig:headingSizeSmall"
+>helloooo</h2>
+<button (click)="changeFontSize()">Change FontSize</button>
+
