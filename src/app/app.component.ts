@@ -15,11 +15,5 @@ import { HeaderComponent } from './header/header.component';
 })
 export class AppComponent {
   title = 'angular-tut';
-  count=0;
- ngOnDestroy() {
-    console.log("ngOnDestroy Called");
-  }
-counter(){
-  this.count++;
-}
+
 }

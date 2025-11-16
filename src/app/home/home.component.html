@@ -6,7 +6,7 @@
             <br>
             <button (click)="gotoprofile('mani')">Profile</button>
             <br>
-            @for (item of users; track item.id) {
+            @for(item of users; track item.id) {
                 <ul>
                  <li style="list-style: none;">
                     <a  routerLink="user/{{item.id}}/{{item.name}}">{{item.name}}</a>

@@ -12,7 +12,7 @@ export class HomeComponent {
         users=[
         {name:'manish',age:"22",email:"xyz@gmail.com",id:10},
         {name:'mani',age:"21",email:"xyz1@gmail.com",id:11},
-        {name:'manya',age:"20",email:"xyz2@gmail.com",id:11},
+        {name:'manya',age:"20",email:"xyz2@gmail.com",id:12},
       ]
   constructor(private router:Router){}
 gotoprofile(name:string){
