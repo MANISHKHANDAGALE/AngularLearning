@@ -1,0 +1,7 @@
+<h1>LifeCycle</h1>
+<h2>{{user}}</h2>
+<button (click)="counter()">increment</button>
+<h2>count:{{count}}</h2>
+<div *ngIf="count!=5">
+  <app-comp [count]="count" #comp></app-comp>
+</div>
