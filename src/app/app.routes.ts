@@ -17,6 +17,7 @@ import { SignalDynamicStyleComponent } from './signal-dynamic-style/signal-dynam
 import { PipesComponent } from './pipes/pipes.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { ServicesComponent } from './services/services.component';
+import { ApiServicesComponent } from './api-services/api-services.component';
 
 export const routes: Routes = [
     {path:"",component:HomeComponent},
@@ -36,5 +37,6 @@ export const routes: Routes = [
     {path:"pipes",component:PipesComponent},
     {path:"lifecycle",component:LifeCycleComponent},
     {path:"services",component:ServicesComponent},
+    {path:"apiServices",component:ApiServicesComponent},
     {path:"**",component:PageNotFoundComponent}
 ];
