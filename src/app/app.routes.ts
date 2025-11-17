@@ -18,6 +18,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { ServicesComponent } from './services/services.component';
 import { ApiServicesComponent } from './api-services/api-services.component';
+import { LazyLoadingComponent } from './lazy-loading/lazy-loading.component';
 
 export const routes: Routes = [
     {path:"",component:HomeComponent},
@@ -38,5 +39,7 @@ export const routes: Routes = [
     {path:"lifecycle",component:LifeCycleComponent},
     {path:"services",component:ServicesComponent},
     {path:"apiServices",component:ApiServicesComponent},
+    // {path:"LazyLoading",component:LazyLoadingComponent},
+    {path:"LazyLoading",loadComponent:()=> import('./lazy-loading/lazy-loading.component').then((c)=>c.LazyLoadingComponent)},
     {path:"**",component:PageNotFoundComponent}
 ];

@@ -1,241 +1,221 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "Exploring Node.js",
-      "author": "alice"
-    },
-    {
-      "id": 2,
-      "title": "Understanding React",
-      "author": "bob"
-    },
-    {
-      "id": 3,
-      "title": "Mastering Vue",
-      "author": "carol"
-    },
-    {
-      "id": 4,
-      "title": "Intro to Angular",
-      "author": "david"
-    },
-    {
-      "id": 5,
-      "title": "Learning Svelte",
-      "author": "eve"
-    },
-    {
-      "id": 6,
+      "id": "6",
       "title": "CSS Tips & Tricks",
-      "author": "frank"
+      "author": "franky"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Debugging JS",
       "author": "grace"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Async Programming",
       "author": "henry"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "REST API Guide",
       "author": "irene"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Writing Clean Code",
       "author": "jack"
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "TypeScript Basics",
       "author": "kate"
     },
     {
-      "id": 12,
-      "title": "Working with SQL",
-      "author": "leo"
-    },
-    {
-      "id": 13,
-      "title": "Learning Python",
-      "author": "maya"
-    },
-    {
-      "id": 14,
-      "title": "Django Deep Dive",
-      "author": "nick"
-    },
-    {
-      "id": 15,
+      "id": "15",
       "title": "Flask for Beginners",
       "author": "olivia"
     },
     {
-      "id": "16",
-      "title": "aa",
-      "author": "aaaaa"
+      "id": "4",
+      "title": "Intro to Angular",
+      "author": "davidg"
+    },
+    {
+      "id": "5",
+      "title": "Learning Svelte",
+      "author": "eveee"
     },
     {
       "id": "1",
-      "title": "a",
-      "author": "aaaaa"
+      "title": "dsca",
+      "author": "ads"
+    },
+    {
+      "id": "1",
+      "title": "dsca",
+      "author": "ads"
+    },
+    {
+      "id": "6",
+      "title": "CSS Tips & Tricks",
+      "author": "frank"
+    },
+    {
+      "id": "6",
+      "title": "CSS Tips & Tricks",
+      "author": "frank"
     }
   ],
   "comments": [
     {
-      "id": 1,
+      "id": "1",
       "body": "Great post!",
       "postId": 1
     },
     {
-      "id": 2,
+      "id": "2",
       "body": "Very helpful, thanks!",
       "postId": 2
     },
     {
-      "id": 3,
+      "id": "3",
       "body": "I learned a lot.",
       "postId": 3
     },
     {
-      "id": 4,
+      "id": "4",
       "body": "Nice explanation.",
       "postId": 4
     },
     {
-      "id": 5,
+      "id": "5",
       "body": "This is awesome!",
       "postId": 5
     },
     {
-      "id": 6,
+      "id": "6",
       "body": "Clear and concise.",
       "postId": 6
     },
     {
-      "id": 7,
+      "id": "7",
       "body": "This helped me debug.",
       "postId": 7
     },
     {
-      "id": 8,
+      "id": "8",
       "body": "Love async programming!",
       "postId": 8
     },
     {
-      "id": 9,
+      "id": "9",
       "body": "Best API guide.",
       "postId": 9
     },
     {
-      "id": 10,
+      "id": "10",
       "body": "Clean code matters!",
       "postId": 10
     },
     {
-      "id": 11,
+      "id": "11",
       "body": "TS is powerful!",
       "postId": 11
     },
     {
-      "id": 12,
+      "id": "12",
       "body": "SQL made easy.",
       "postId": 12
     },
     {
-      "id": 13,
+      "id": "13",
       "body": "Python is great.",
       "postId": 13
     },
     {
-      "id": 14,
+      "id": "14",
       "body": "Django rocks!",
       "postId": 14
     },
     {
-      "id": 15,
+      "id": "15",
       "body": "Flask is fun!",
       "postId": 15
     }
   ],
   "profile": [
     {
-      "id": 1,
+      "id": "1",
       "name": "alice",
       "role": "admin"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "bob",
       "role": "editor"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "carol",
       "role": "writer"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "david",
       "role": "viewer"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "eve",
       "role": "admin"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "frank",
       "role": "writer"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "grace",
       "role": "editor"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "henry",
       "role": "viewer"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "irene",
       "role": "writer"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "jack",
       "role": "editor"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "kate",
       "role": "admin"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "leo",
       "role": "editor"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "maya",
       "role": "writer"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "nick",
       "role": "viewer"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "olivia",
       "role": "writer"
     }

@@ -6,6 +6,7 @@
             <br>
             <button (click)="gotoprofile('mani')">Profile</button>
             <br>
+            <button><a routerLink="/LazyLoading">LazyLoading</a></button>
             @for(item of users; track item.id) {
                 <ul>
                  <li style="list-style: none;">
