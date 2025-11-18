@@ -1,19 +1,21 @@
-<div  style="text-align: center;">
-        <h1>Home Page</h1>
-            <!-- <li>
-                <a  [routerLink]="['profile',{name:'manish'}]">Go To Profile</a>
-            </li> -->
-            <br>
-            <button (click)="gotoprofile('mani')">Profile</button>
-            <br>
-            <button><a routerLink="/LazyLoading">LazyLoading</a></button>
-            @for(item of users; track item.id) {
-                <ul>
-                 <li style="list-style: none;">
-                    <a  routerLink="user/{{item.id}}/{{item.name}}">{{item.name}}</a>
-                 </li>
-                </ul>
-                
-            }
+<div class="container">
+  <h1 class="title">Home Page</h1>
 
-    </div>
+  <div class="btn-group">
+    <button class="btn primary" (click)="gotoprofile('mani')">Go to Profile</button>
+    <button class="btn secondary">
+      <a routerLink="/LazyLoading">Lazy Loading</a>
+    </button>
+  </div>
+
+  <div class="user-list">
+    <h2 class="subtitle">Users</h2>
+    @for(item of users; track item.id) {
+      <div class="user-card">
+        <a routerLink="user/{{item.id}}/{{item.name}}">
+          {{ item.name }}
+        </a>
+      </div>
+    }
+  </div>
+</div>
